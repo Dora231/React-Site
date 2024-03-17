@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.CategoryList {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.AllCategory {
+  display: flex;
+}
+.containerCategory {
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 250px;
+  height: 400px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ImgCategory {
+  width: 200px;
+  height: 300px;
+}
+.ImgCategoryAdd {
+  width: 200px;
+  height: 270px;
+}
+.Header {
+  width: 100%;
+}
+.HeaderContent {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 17px;
+}
+.SortAmount, .SortCategory{
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+}
+.AllBtnHeader,.Statistics,.SortCategory  {
+  margin-left: 10px;
+}
+.btnExpense, .btnIncome, .spent ,.arrived {
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  padding: 1px;
+}
+.btnIncome,.arrived {
+  margin-top: 2px;
+}
+.HeaderPagination {
+  margin-top: 5px;
+  display: flex;
+  margin-left: 43%;
+  width: 400px;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.stickHeaderPagination {
+  background: black;
+  width: 0.2px;
+  height: 26px;
+  border: 0.5px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.AllContainerCategoryExpense{
+  display: flex;
+  flex-wrap: wrap;
+}
+.ContainerCategoryExpense {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 200px;
+  height: 220px;
+  margin-left: 20px;
+  margin-top: 20px;
 }

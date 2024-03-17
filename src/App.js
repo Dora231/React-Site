@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import MainPage from './Components/MainPage/MainPage';
+import Header from './Components/Header/Header';
+import Expenses from './Components/Expenses/Expenses';
+import Income from './Components/Income/Income';
+import CategoryExpenses from './Components/Expenses/CategoryExpenses';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <Header></Header>
+      <Routes>
+      <Route path='/' element={<MainPage></MainPage>}></Route>
+      <Route path='income' element={<Income></Income>}></Route>
+      <Route path='expense' element={<Expenses></Expenses>}></Route>  
+      <Route path='category_expense/:id' element={<CategoryExpenses></CategoryExpenses>}></Route>
+
+      </Routes>
+      </BrowserRouter>
+      
+      
+      
+      
     </div>
   );
 }
