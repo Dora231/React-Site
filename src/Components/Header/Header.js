@@ -17,7 +17,6 @@ export default function Header() {
                     <div>Доходы</div>
                 </Link>
             </div>
-            
         </div>
     )
 }

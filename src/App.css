@@ -11,18 +11,18 @@
   margin-left: 20px;
   border: 1px solid black;
   border-radius: 20px;
-  width: 250px;
+  width: 300px;
   height: 400px;
   text-align: center;
   cursor: pointer;
 }
 
-.ImgCategory {
-  width: 200px;
+.ImgCategory, .ImgCategoryAdd {
+  width: 270px;
   height: 300px;
+  border-radius: 20px;
 }
 .ImgCategoryAdd {
-  width: 200px;
   height: 270px;
 }
 .Header {
@@ -101,8 +101,15 @@
   text-align: center;
   border: 1px solid black;
   border-radius: 10px;
-  width: 200px;
+  width: 230px;
   height: 220px;
   margin-left: 20px;
   margin-top: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+.ImgExpenseAdd {
+  width: 210px;
+  height: 200px;
+  
 }

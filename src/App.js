@@ -16,13 +16,8 @@ function App() {
       <Route path='income' element={<Income></Income>}></Route>
       <Route path='expense' element={<Expenses></Expenses>}></Route>  
       <Route path='category_expense/:id' element={<CategoryExpenses></CategoryExpenses>}></Route>
-
       </Routes>
       </BrowserRouter>
-      
-      
-      
-      
     </div>
   );
 }
